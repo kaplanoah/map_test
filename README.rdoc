@@ -1,28 +1,21 @@
-== README
+== GOOGLE MAPS AND GEOCODING
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is to set up the basic JavaScript and AJAX calls for creating a model that contains a latitude and longitude based on an address that a user entered in a form.
 
-Things you may want to cover:
+It uses:
 
-* Ruby version
+* Google Maps API v3 (displaying map)
 
-* System dependencies
+* Google Maps JavaScript API v3 (geocoding)
 
-* Configuration
+Relevant pages:
 
-* Database creation
+* app > assets > views > maps > new.html.erb
 
-* Database initialization
+* app > assets > views > maps > show.html.erb
 
-* How to run the test suite
+* app > assets > controllers > maps_controller.rb
 
-* Services (job queues, cache servers, search engines, etc.)
+* app > assets > stylesheets > maps.css.scss (for html, body and canvas)
 
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* app > assets > views > maps > new.html.erb (disabling scaling)
