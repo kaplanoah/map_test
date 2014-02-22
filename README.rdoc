@@ -7,7 +7,7 @@ Relevant pages:
 
 * app > assets > views > maps > new.html.erb
 
-                                show.html.erb
+* app > assets > views > maps > show.html.erb
 
 * app > assets > controllers > maps_controller.rb
 
