@@ -7,12 +7,15 @@
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvHawiMNKSViHecR02Ns3b0aBjqNSzNvk&sensor=false"></script>
 
 <script type="text/javascript">
+
 function initialize() {
   var latlng = new google.maps.LatLng(<%= @map.lat %>, <%= @map.lng %>);
   var mapOptions = {
     zoom: 16,
-    center: latlng
+    center: latlng,
+    mapTypeControl: false
   }
+
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   var marker = new google.maps.Marker({
     map: map,
