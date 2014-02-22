@@ -1,0 +1,5 @@
+<h1>Maps</h1>
+
+<% @maps.each do |map| %>
+  <%= link_to map.address, map_path(map) %><br>
+<% end %>

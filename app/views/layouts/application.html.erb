@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MapsTest</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+</head>
+<body>
+
+<%= link_to "Maps", maps_path %> <br>
+<%= link_to "New map", new_map_path %>
+
+<%= yield %>
+
+</body>
+</html>
