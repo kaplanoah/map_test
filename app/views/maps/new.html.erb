@@ -15,12 +15,14 @@ function codeAddress() {
   var address = document.getElementById('address').value;
   geocoder.geocode( { 'address': address}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
+      var lat = results[0].geometry.location.d;
+      var lng = results[0].geometry.location.e;
       $.ajax({
         method : "post",
         url : "/maps.json",
-        data : { map : { address : address } }
+        data : { map : { address : address, lat : lat, lng : lng } }
       }).done(function() {
-        alert("DONE!");
+        console.log(lat);
       });
     } else {
       alert("We couldn't find that address. Check for spelling, or try entering more information." + status);

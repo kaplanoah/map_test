@@ -12,7 +12,7 @@ class MapsController < ApplicationController
   end
 
   def create
-    parameters = params.require(:map).permit(:address)
+    parameters = params.require(:map).permit(:address, :lat, :lng)
     @map = Map.create(parameters)
     
     respond_to do |f|

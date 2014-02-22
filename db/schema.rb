@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(version: 20140222185249) do
 
   create_table "maps", force: true do |t|
     t.string   "address"
-    t.decimal  "lat"
-    t.decimal  "lng"
+    t.float    "lat"
+    t.float    "lng"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
