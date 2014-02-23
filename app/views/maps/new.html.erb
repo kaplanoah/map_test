@@ -3,12 +3,10 @@
 <input id="address" type="textbox" placeholder="414 Brannan St">
 <input type="button" value="Geocode" onclick="codeAddress()">
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvHawiMNKSViHecR02Ns3b0aBjqNSzNvk&sensor=false"></script>
-
 <script type="text/javascript">
 
 var geocoder;
-function initialize() {
+function initialize_geocoding() {
   geocoder = new google.maps.Geocoder();
 };
 
@@ -31,12 +29,14 @@ function codeAddress() {
   });
 };
 
-$(document).on('ready page:load', initialize);
+// $(document).on('ready page:load', initialize_geocoding);
 
-// $(document).ready( initialize );
-// $(document).on("page:load", initialize );
+// google.maps.event.addDomListener(window, "load", initialize_geocoding);
 
-// google.maps.event.addDomListener(window, 'load', initialize);
-// google.maps.event.addDomListener(window, 'page:load', initialize);
+// // $(document).ready( initialize_geocoding );
+// // $(document).on("page:load", initialize_geocoding );
+
+google.maps.event.addDomListener(window, 'load', initialize_geocoding);
+google.maps.event.addDomListener(window, 'page:load', initialize_geocoding);
 
 </script>
