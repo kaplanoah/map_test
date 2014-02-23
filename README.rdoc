@@ -24,4 +24,7 @@ APIs:
 
 
 
-Each Map model has the attributes `address:string` `lat:float` and `lng:float`
+Each Map model has the attributes
+    address:string
+    lat:float
+    lng:float
