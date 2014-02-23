@@ -2,6 +2,7 @@
 
 This app is to set up the basic JavaScript and AJAX calls for creating a model that contains a latitude and longitude based on an address that a user entered in a form.
 
+--
 
 Relevant pages:
 
@@ -13,9 +14,14 @@ Relevant pages:
 
 * app > assets > stylesheets > maps.css.scss (for html, body and canvas)
 
+--
 
 APIs:
 
 * Google Maps API v3 (displaying map)
 
 * Google Maps JavaScript API v3 (geocoding)
+
+--
+
+Each Map model has the attributes `address:string` `lat:float` and `lng:float`
