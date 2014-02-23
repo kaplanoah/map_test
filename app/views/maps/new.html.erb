@@ -7,9 +7,6 @@
 
 <script type="text/javascript">
 
-$(document).ready( initialize );
-$(document).on("page:load", initialize );
-
 var geocoder;
 function initialize() {
   geocoder = new google.maps.Geocoder();
@@ -34,7 +31,12 @@ function codeAddress() {
   });
 };
 
-//google.maps.event.addDomListener(window, 'load', initialize);
-//google.maps.event.addDomListener(window, 'page:load', initialize);
+$(document).on('ready page:load', initialize);
+
+// $(document).ready( initialize );
+// $(document).on("page:load", initialize );
+
+// google.maps.event.addDomListener(window, 'load', initialize);
+// google.maps.event.addDomListener(window, 'page:load', initialize);
 
 </script>
